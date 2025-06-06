@@ -11,7 +11,7 @@ TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 bot = telebot.TeleBot(TOKEN)
 
 # URL tvé Mini Appky - ZMĚŇ NA SVOU URL!
-WEBAPP_URL = "https://tvuj-github-username.github.io/tvuj-repozitar/"
+WEBAPP_URL = "https://vojtaam.github.io/flashbox-mini-app/"
 
 @bot.message_handler(commands=['start', 'hello'])
 def send_welcome(message):
