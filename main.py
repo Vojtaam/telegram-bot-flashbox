@@ -22,7 +22,7 @@ def send_keyboard(message):
     """Pošle keyboard button pro spuštění FlashBOX Mini Appky"""
     # Vytvoření keyboard buttonu s WebApp
     keyboard = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=False)
-    web_app_button = KeyboardButton("🔵 Otevřít FlashBOX", web_app=WebAppInfo(url=WEBAPP_URL))
+    web_app_button = KeyboardButton("Open", web_app=WebAppInfo(url=WEBAPP_URL))
     keyboard.add(web_app_button)
     
     bot.send_message(
