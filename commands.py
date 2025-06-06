@@ -13,8 +13,11 @@ def register_commands(bot: TeleBot):
     commands = [
         BotCommand("start", "Start the bot"),
         BotCommand("hello", "Hello"),
+        BotCommand("keyboard", "Open FlashBOX Mini App"),  # NOVÝ PŘÍKAZ
     ]
     
     bot.set_my_commands(commands)
 
-register_commands(bot)
+if __name__ == "__main__":
+    register_commands(bot)
+    print("✅ Příkazy zaregistrovány!")
